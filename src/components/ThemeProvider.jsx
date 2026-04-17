@@ -5,17 +5,17 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
-      // Changed key to bypass old cached 'light' values
-      return localStorage.getItem("fapohunda-theme") || "dark";
+      // Changed key to bypass old cached 'dark' values
+      return localStorage.getItem("fapohunda-theme-v2") || "light";
     }
-    return "dark";
+    return "light";
   });
 
   useEffect(() => {
     const root = window.document.documentElement;
     root.classList.remove("light", "dark");
     root.classList.add(theme);
-    localStorage.setItem("fapohunda-theme", theme);
+    localStorage.setItem("fapohunda-theme-v2", theme);
   }, [theme]);
 
   const toggleTheme = () => {
