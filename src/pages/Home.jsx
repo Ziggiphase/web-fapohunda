@@ -272,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bento Grid Picture Gallery (Scraped Authentic Images) */}
+      {/* Bento Grid Picture Gallery (Scraped Authentic Images) 
       <section className="py-32 relative bg-white dark:bg-[#030303] transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-16">
@@ -294,6 +294,7 @@ export default function Home() {
            </div>
         </div>
       </section>
+      */}
 
       {/* Trajectory Timeline - Minimalist Card List */}
       <section id="experience" className="py-32 relative bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
