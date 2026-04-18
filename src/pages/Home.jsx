@@ -79,19 +79,19 @@ export default function Home() {
     { id: "u-WgtHDGi30", title: "Eminent Nigerians Call for Overhaul of Nigerian Constitution -Fapohunda" },
     { id: "aHrXRiyqFLk", title: "Peter Obi Must Take Extra Security Precautions Or Else…” – Dr. Akin Fapohunda Warns" },
     { id: "0eLXky6St8c", title: "Why Afenifere And The Yoruba Nation Endorsed Peter Obi - Dr Akin Fapohunda" },
-    { id: "Vhxkmhp8Z54", title: "Accountability in Nigeria: Corp Member’s Insult to the President" },
+
     { id: "mYCQMDlqORQ", title: "WHAT YORUBA NEED NOW AND HOW TO GET IT - DR. AKIN FAPOHUNDA (Sponsored by VoR)" },
     { id: "YqPFP7lWr_w", title: "Nigeria's Return to Regional Government and ANC's Coalition Deal in South Africa" },
     { id: "6CNJrBKaaQ0", title: "Constitution Review: South-South Pushes for Resource Control, State Police" },
     { id: "RzQydEmTLL4", title: "Impeachment Plot a Last Breath Survival Tactic from Pro-Wike Camp to Fubara - Fapohunda" },
     { id: "E5Oxckf1v1o", title: "Fapohunda, Abayomi Review Proposed Bill For A New Governance Model" },
-    { id: "rFZX99nt-Jo", title: "What does restructuring mean for Northern Nigeria" },
+
     { id: "uoWi4Yfap-o", title: "Fapohunda's Divisive Bill: Uniting Yorubas, Splitting Igbos" },
-    { id: "LUiqPueSv2s", title: "Nigeria Has Informally Adopted A Six-Zonal Structure - Akin Osuntokun " },
+
     { id: "5dcLTZCnju4", title: "'I Wish Chukwuma Nzeogwu & Gideon Orkar Failed Coup Were Successful' - Dr Akin Fapohunda" },
-    { id: "3_Kr5dsgOho", title: "The Economist: After Painful Reforms, Nigeria's Economy Bearing Results " },
+
     { id: "3izr8GPKruA", title: "STATE OF THE NATION WITH DR. AKIN FAPOHUNDA." },
-    { id: "LKiKhfutjUY", title: "Nigeria Will Do 'Whatever It Needs' to Control Inflation: Cardoso" },
+
     { id: "r_ZlRlnuRg8", title: "The Root of Our Problem is Almajiri, They are the Ones CarryinG AK47 About -Fapounda" },
   ];
   const { scrollY } = useScroll();
