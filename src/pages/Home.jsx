@@ -272,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bento Grid Picture Gallery (Scraped Authentic Images) 
+      {/* Bento Grid Picture Gallery (Scraped Authentic Images) */}
       <section className="py-32 relative bg-white dark:bg-[#030303] transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-16">
@@ -280,21 +280,30 @@ export default function Home() {
              <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">Moments from my professional life and leadership journey.</p>
            </div>
            
-           <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 h-[800px] md:h-[600px]">
-              <div className="md:col-span-2 md:row-span-2 rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
-                 <img src="https://fapohunda.org.ng/wp-content/uploads/2023/10/IMG_20200211_181921.jpg" alt="Gallery Image 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <div className="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-4 h-[600px] md:h-[600px]">
+              <div className="col-span-2 row-span-2 rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
+                 <img src="/gallery-5.png" alt="Gallery Image 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-500"></div>
               </div>
               <div className="rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
-                 <img src="https://fapohunda.org.ng/wp-content/uploads/2023/10/IMG_20191207_161234.jpg" alt="Gallery Image 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <img src="/gallery-2.jpg" alt="Gallery Image 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-500"></div>
               </div>
               <div className="rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
-                 <img src="https://fapohunda.org.ng/wp-content/uploads/2023/10/IMG-20180524-WA0289.jpg" alt="Gallery Image 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <img src="/gallery-3.jpg" alt="Gallery Image 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-500"></div>
+              </div>
+              <div className="rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
+                 <img src="/gallery-4.jpg" alt="Gallery Image 4" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-500"></div>
+              </div>
+              <div className="rounded-[2rem] overflow-hidden group shadow-md border border-slate-200 dark:border-slate-700 relative">
+                 <img src="/gallery-1.jpg" alt="Gallery Image 5" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-500"></div>
               </div>
            </div>
         </div>
       </section>
-      */}
 
       {/* Trajectory Timeline - Minimalist Card List */}
       <section id="experience" className="py-32 relative bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
