@@ -30,7 +30,7 @@ export default function Business() {
               </div>
               <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight group-hover:text-amber-100 transition-colors">Innovating Minds, Automating the Future.</h2>
               <p className="text-slate-400 dark:text-slate-500 text-xl mb-10 leading-relaxed transition-colors">
-                Bridging the gap between technology and community development. We provide world-class training in AI & Robotics.
+                Bridging the gap between technology and community development. With a proven track record of training over 16,000 graduates, we provide world-class training in AI, Robotics, and Industrial Automation.
               </p>
               <a href="https://acair.edu.ng/" target="_blank" rel="noreferrer" className="inline-flex items-center text-accent dark:text-amber-400 font-bold text-xl hover:translate-x-2 transition-transform bg-white/5 py-4 px-8 rounded-full border border-white/10 hover:bg-white/10">
                 Explore ACAIR <ArrowUpRight className="ml-3 w-6 h-6" />

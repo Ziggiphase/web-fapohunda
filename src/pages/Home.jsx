@@ -48,72 +48,95 @@ export default function Home() {
   const scrollRef = useRef(null);
 
   const dummyVideos = [
-    { id: "ZnHdkK4EhuE", title: "Nigeria Is Not One Nation; Trying to Make Us One Is Never Going to Work -Fapohunda" },
-    { id: "Wp6ouX2Su7g", title: "'Nigeria Has Failed So Badly That Tinubu Is Now Running Multiple Budgets at Once' - Fapohunda" },
-    { id: "tXN69RN9EF4", title: "Nigeria Will Be in Trouble in 2027 if Restructuring is Not Prioritised Today - Dr. Akin Fapohunda" },
-    { id: "QqpsLCm3TjM", title: "\"Supreme Court has Been Destroyed, Judiciary Has Lost Its Dignity\" - Fapohunda" },
-    { id: "NhxDn1dyvSg", title: "Where & How The Data Went Wrong.| Dr Akin Fapohunda #analysis #population #elections #datamanagement" },
-    { id: "yEy2wJAHiFo", title: "The Data Measurement #Source And Its Credibility.| Akin Fapohunda #census #datamanagement #elections" },
-    { id: "YW0E_rAbIl4", title: "June 12: Babangida Should Hide in Shame -  Akin Fapohunda" },
-    { id: "s5iDJZ__2kA", title: "Eminent Patriot Of Nigeria Call For New Constitution - Akin Fapohunda" },
-    { id: "IFTweRIZLkA", title: "Why The Census Is Important.|Dr Akin Fapohunda #population #census #shorts_ #analysis #npc #nigeria" },
-    { id: "AlugAuOX17k", title: "PROF UKA EZENWE & DR AKIN FAPOHUNDA SPEAKS ON ELECTION POSTPONEMENT : HUMAN AND FINANCIAL COSTS - 2" },
-    { id: "DrN3b1DfUUk", title: "Why I Drafted Bill to Return Nigeria to Regional Govt -  Dr Fapohunda" },
-    { id: "X8MxtKi7gu0", title: "Eye On The Presidential Election Data.|Akin Fapohunda #data #2023elections #analysis #npc #subscribe" },
-    { id: "ictc4lIeSIA", title: "Tinubu to Receive Controversial Regional Government Bill: Key Insights" },
-    { id: "YZtf5XUXzKw", title: "Nigeria: Continuous Clamour  For Restructuring- Akin Fapohunda" },
-    { id: "7gjpl3xZPG0", title: "Reformed Tax System In A Structured Nigeria - Akin Fapohunda" },
-    { id: "ME9pvuFk-3k", title: "The Creation of the Ministry of Livestock Development is Purely a Political Move - Akin Fapohunda" },
-    { id: "TqwfEUlgj4I", title: "Tinubu Is Not A Good Man, He's A Transactional Leader, Only Deațħ Can Stop Him In 2027 - Dr Fapounda" },
-    { id: "kI05uRZs8No", title: "There is Extreme Centralization of Power in Abuja - Dr Akin Fapohunda" },
-    { id: "6dtsHf8dlCc", title: "Clamour For Restructuring Nigeria -Fapohunda" },
-    { id: "Kt7lIGwydvg", title: "Akin Fapohunda Speaks: The Blueprint for a True Nigerian Federation" },
-    { id: "PAbtE4kO8XM", title: "Why It Seems We Do Not Believe In What We Do...|Dr Akin Fapohunda #process #presidentialelection" },
-    { id: "t6O2S5IlbKw", title: "How Wrong The Population #Data Might Be.|Dr Akin Fapohunda #population  #datamanagement #analysis" },
-    { id: "HYliSMCfm3E", title: "There is Extreme Centralization of Power in Abuja - Dr Akin Fapohunda " },
-    { id: "K6L4BwHoPsI", title: "We Must Demolish To Rebuild, We Have Talked Enough - Dr Akin Fapohunda" },
-    { id: "GAzixh23IoY", title: "Restructuring Nigeria: Scrapping 36 States for Regionalism" },
-    { id: "-8dlON3LyYI", title: "Place And Value Of Technical Education, A Brief Remark - Dr Akin Fapohunda" },
-    { id: "QBqzAyhoshI", title: "The Atrocities Of Religious Persecution In Northern Nigeria; \"Nigeria Not A Nation\" - Akin Fapohunda" },
-    { id: "2X7CAHXknDw", title: "Proposed Draft Constitution To Change Nigeria From 36 States To 9 Regions, Interview With Proponent" },
-    { id: "u-WgtHDGi30", title: "Eminent Nigerians Call for Overhaul of Nigerian Constitution -Fapohunda" },
-    { id: "aHrXRiyqFLk", title: "Peter Obi Must Take Extra Security Precautions Or Else…” – Dr. Akin Fapohunda Warns" },
-    { id: "0eLXky6St8c", title: "Why Afenifere And The Yoruba Nation Endorsed Peter Obi - Dr Akin Fapohunda" },
-
-    { id: "mYCQMDlqORQ", title: "WHAT YORUBA NEED NOW AND HOW TO GET IT - DR. AKIN FAPOHUNDA (Sponsored by VoR)" },
-    { id: "YqPFP7lWr_w", title: "Nigeria's Return to Regional Government and ANC's Coalition Deal in South Africa" },
-    { id: "6CNJrBKaaQ0", title: "Constitution Review: South-South Pushes for Resource Control, State Police" },
-    { id: "RzQydEmTLL4", title: "Impeachment Plot a Last Breath Survival Tactic from Pro-Wike Camp to Fubara - Fapohunda" },
-    { id: "E5Oxckf1v1o", title: "Fapohunda, Abayomi Review Proposed Bill For A New Governance Model" },
-
-    { id: "uoWi4Yfap-o", title: "Fapohunda's Divisive Bill: Uniting Yorubas, Splitting Igbos" },
-
-    { id: "5dcLTZCnju4", title: "'I Wish Chukwuma Nzeogwu & Gideon Orkar Failed Coup Were Successful' - Dr Akin Fapohunda" },
-
-    { id: "3izr8GPKruA", title: "STATE OF THE NATION WITH DR. AKIN FAPOHUNDA." },
-
-    { id: "r_ZlRlnuRg8", title: "The Root of Our Problem is Almajiri, They are the Ones CarryinG AK47 About -Fapounda" },
+    { id: "5dcLTZCnju4", title: "'I Wish Chukwuma Nzeogwu & Gideon Orkar Failed Coup Were Successful' - Dr Akin Fapohunda", channel: "Local Journo", date: "2026-03-20T04:11:13-07:00" },
+    { id: "HYliSMCfm3E", title: "There is Extreme Centralization of Power in Abuja - Dr Akin Fapohunda ", channel: "PAPShow", date: "2026-03-15T11:30:06-07:00" },
+    { id: "kI05uRZs8No", title: "There is Extreme Centralization of Power in Abuja - Dr Akin Fapohunda", channel: "PAPShow", date: "2026-03-15T11:30:00-07:00" },
+    { id: "aHrXRiyqFLk", title: "Peter Obi Must Take Extra Security Precautions Or Else…” – Dr. Akin Fapohunda Warns", channel: "Active Citizens", date: "2026-03-10T21:15:33-07:00" },
+    { id: "Kt7lIGwydvg", title: "Akin Fapohunda Speaks: The Blueprint for a True Nigerian Federation", channel: "Busuyi Oris", date: "2026-03-08T09:58:11-07:00" },
+    { id: "QBqzAyhoshI", title: "The Atrocities Of Religious Persecution In Northern Nigeria; \"Nigeria Not A Nation\" - Akin Fapohunda", channel: "Maiyegun's Diary Politico", date: "2026-03-07T05:40:06-08:00" },
+    { id: "Wp6ouX2Su7g", title: "'Nigeria Has Failed So Badly That Tinubu Is Now Running Multiple Budgets at Once' - Fapohunda", channel: "SYMFONI", date: "2026-01-20T08:45:55-08:00" },
+    { id: "RzQydEmTLL4", title: "Impeachment Plot a Last Breath Survival Tactic from Pro-Wike Camp to Fubara - Fapohunda", channel: "Arise News", date: "2026-01-18T02:57:33-08:00" },
+    { id: "QqpsLCm3TjM", title: "\"Supreme Court has Been Destroyed, Judiciary Has Lost Its Dignity\" - Fapohunda", channel: "SYMFONI", date: "2026-01-17T12:17:35-08:00" },
+    { id: "TqwfEUlgj4I", title: "Tinubu Is Not A Good Man, He's A Transactional Leader, Only Deațħ Can Stop Him In 2027 - Dr Fapounda", channel: "SYMFONI", date: "2026-01-17T07:34:18-08:00" },
+    { id: "r_ZlRlnuRg8", title: "The Root of Our Problem is Almajiri, They are the Ones CarryinG AK47 About -Fapounda", channel: "Arise News", date: "2025-12-05T01:49:34-08:00" },
+    { id: "u-WgtHDGi30", title: "Eminent Nigerians Call for Overhaul of Nigerian Constitution -Fapohunda", channel: "Arise News", date: "2025-10-22T15:37:21-07:00" },
+    { id: "ZnHdkK4EhuE", title: "Nigeria Is Not One Nation; Trying to Make Us One Is Never Going to Work -Fapohunda", channel: "Arise News", date: "2025-09-22T15:00:40-07:00" },
+    { id: "6CNJrBKaaQ0", title: "Constitution Review: South-South Pushes for Resource Control, State Police", channel: "News Central TV", date: "2025-07-22T05:22:53-07:00" },
+    { id: "s5iDJZ__2kA", title: "Eminent Patriot Of Nigeria Call For New Constitution - Akin Fapohunda", channel: "Arise News", date: "2025-07-20T11:26:45-07:00" },
+    { id: "6dtsHf8dlCc", title: "Clamour For Restructuring Nigeria -Fapohunda", channel: "Arise News", date: "2025-04-30T16:30:26-07:00" },
+    { id: "YW0E_rAbIl4", title: "June 12: Babangida Should Hide in Shame -  Akin Fapohunda", channel: "Arise News", date: "2025-02-23T11:12:09-08:00" },
+    { id: "7gjpl3xZPG0", title: "Reformed Tax System In A Structured Nigeria - Akin Fapohunda", channel: "Arise News", date: "2025-01-05T03:52:19-08:00" },
+    { id: "3izr8GPKruA", title: "STATE OF THE NATION WITH DR. AKIN FAPOHUNDA.", channel: "A NEW NIGERIA©", date: "2024-09-27T12:51:47-07:00" },
+    { id: "ME9pvuFk-3k", title: "The Creation of the Ministry of Livestock Development is Purely a Political Move - Akin Fapohunda", channel: "Arise News", date: "2024-07-10T10:39:44-07:00" },
+    { id: "uoWi4Yfap-o", title: "Fapohunda's Divisive Bill: Uniting Yorubas, Splitting Igbos", channel: "YangaLife", date: "2024-06-16T22:35:11-07:00" },
+    { id: "tXN69RN9EF4", title: "Nigeria Will Be in Trouble in 2027 if Restructuring is Not Prioritised Today - Dr. Akin Fapohunda", channel: "Arise News", date: "2024-06-16T06:01:18-07:00" },
+    { id: "YqPFP7lWr_w", title: "Nigeria's Return to Regional Government and ANC's Coalition Deal in South Africa", channel: "News Central TV", date: "2024-06-15T03:32:23-07:00" },
+    { id: "ictc4lIeSIA", title: "Tinubu to Receive Controversial Regional Government Bill: Key Insights", channel: "News Central TV", date: "2024-06-15T03:08:05-07:00" },
+    { id: "E5Oxckf1v1o", title: "Fapohunda, Abayomi Review Proposed Bill For A New Governance Model", channel: "Channels Television", date: "2024-06-10T04:50:48-07:00" },
+    { id: "2X7CAHXknDw", title: "Proposed Draft Constitution To Change Nigeria From 36 States To 9 Regions, Interview With Proponent", channel: "Njenje Media TV", date: "2024-06-09T12:17:36-07:00" },
+    { id: "YZtf5XUXzKw", title: "Nigeria: Continuous Clamour  For Restructuring- Akin Fapohunda", channel: "Arise News", date: "2024-06-04T09:53:42-07:00" },
+    { id: "GAzixh23IoY", title: "Restructuring Nigeria: Scrapping 36 States for Regionalism", channel: "News Central TV", date: "2024-06-04T03:43:42-07:00" },
+    { id: "DrN3b1DfUUk", title: "Why I Drafted Bill to Return Nigeria to Regional Govt -  Dr Fapohunda", channel: "Nigeria Info FM", date: "2024-06-03T20:20:31-07:00" },
+    { id: "NhxDn1dyvSg", title: "Where & How The Data Went Wrong.| Dr Akin Fapohunda #analysis #population #elections #datamanagement", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T11:25:28-08:00" },
+    { id: "yEy2wJAHiFo", title: "The Data Measurement #Source And Its Credibility.| Akin Fapohunda #census #datamanagement #elections", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T11:16:55-08:00" },
+    { id: "t6O2S5IlbKw", title: "How Wrong The Population #Data Might Be.|Dr Akin Fapohunda #population  #datamanagement #analysis", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T11:14:04-08:00" },
+    { id: "PAbtE4kO8XM", title: "Why It Seems We Do Not Believe In What We Do...|Dr Akin Fapohunda #process #presidentialelection", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T10:10:35-08:00" },
+    { id: "IFTweRIZLkA", title: "Why The Census Is Important.|Dr Akin Fapohunda #population #census #shorts_ #analysis #npc #nigeria", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T08:06:57-08:00" },
+    { id: "X8MxtKi7gu0", title: "Eye On The Presidential Election Data.|Akin Fapohunda #data #2023elections #analysis #npc #subscribe", channel: "MONEYLINE WITH NANCY TV", date: "2023-03-06T05:38:10-08:00" },
+    { id: "0eLXky6St8c", title: "Why Afenifere And The Yoruba Nation Endorsed Peter Obi - Dr Akin Fapohunda", channel: "Njenje Media TV", date: "2022-10-28T09:00:10-07:00" },
+    { id: "mYCQMDlqORQ", title: "WHAT YORUBA NEED NOW AND HOW TO GET IT - DR. AKIN FAPOHUNDA (Sponsored by VoR)", channel: "IMPACT TELEVISION", date: "2022-08-15T10:12:11-07:00" },
+    { id: "-8dlON3LyYI", title: "Place And Value Of Technical Education, A Brief Remark - Dr Akin Fapohunda", channel: "Njenje Media TV", date: "2022-06-26T00:44:11-07:00" },
+    { id: "K6L4BwHoPsI", title: "We Must Demolish To Rebuild, We Have Talked Enough - Dr Akin Fapohunda", channel: "Njenje Media TV", date: "2021-03-08T08:00:05-08:00" },
+    { id: "AlugAuOX17k", title: "PROF UKA EZENWE & DR AKIN FAPOHUNDA SPEAKS ON ELECTION POSTPONEMENT : HUMAN AND FINANCIAL COSTS - 2", channel: "MONEYLINE WITH NANCY TV", date: "2019-02-20T13:42:29-08:00" },
   ];
   const { scrollY } = useScroll();
   const parallaxY = useTransform(scrollY, [0, 1000], [0, 200]);
 
-  const experiences = [
-    { year: "Aug 1976", title: "Government Staff", organization: "Federal Ministry of Agriculture" },
-    { year: "1989", title: "Head of Computer & Info Services", organization: "Raw Materials Research & Development Council (RMRDC)" },
-    { year: "1992", title: "Director, Planning, Research & Data Bank", organization: "National Agricultural Land Development Authority (NALDA)" },
-    { year: "July 1999", title: "Director", organization: "Space Science Office" },
-    { year: "2000+", title: "Executive Director", organization: "Digital Trust Ltd / Gte" },
-    { year: "2004+", title: "Executive Director", organization: "Aflon Digital Institute" },
-    { year: "2009", title: "Senior Lecturer", organization: "Multimedia Technology and Digital Image Processing at Bingham University" },
-    { year: "2012", title: "IT Advisor", organization: "Elizade University" },
+  const professionalPhases = [
+    {
+      title: "Phase 1: 1975 – 2000",
+      subtitle: "Agricultural Excellence & Remote Sensing (Federal Public Sector)",
+      description: "Dedicated to the scientific and administrative advancement of Nigeria’s agricultural and space science infrastructure.",
+      color: "bg-blue-600",
+      items: [
+        { year: "1975", role: "B.Sc. in Agronomy/Agriculture", org: "University of Ibadan" },
+        { year: "1976", role: "Commenced career", org: "Federal Ministry of Agriculture", detail: "Applying computational models to soil science and environmental monitoring." },
+        { year: "1980", role: "M.Sc. in Remote Sensing & Environmental Monitoring", org: "University of Wisconsin-Madison, USA" },
+        { year: "1986", role: "Ph.D. in Digital Soil Variability Studies", org: "University of Ibadan" },
+        { year: "1989", role: "Pioneer Head of Computer and Information Services", org: "Raw Materials Research & Development Council (RMRDC)" },
+        { year: "1992", role: "Pioneer Director de Plan., Res. & Data Bank", org: "National Agricultural Land Development Authority (NALDA)" },
+        { year: "1999–2000", role: "Director, Space Science Office", org: "The Presidency", detail: "Laid foundational strategies for Nigeria's satellite and remote sensing capabilities." },
+      ]
+    },
+    {
+      title: "Phase 2: 2001 – 2025",
+      subtitle: "IT Professionalism, Training & Project Management (Private Sector)",
+      description: "A quarter-century focused on human capital development and digital literacy across Nigeria.",
+      color: "bg-accent",
+      items: [
+        { year: "2001 - 2025", role: "Founder & Director", org: "Aflon Digital Group", detail: "Under his leadership, over 16,000 graduates were trained in diverse IT disciplines." },
+        { year: "Consultant", role: "IT Competency Evaluation Consultant", org: "Office of the Head of Civil Service of the Federation (OHCSF)", detail: "Rigorous selection of Permanent Secretaries." },
+        { year: "2009–2018", role: "Visiting Senior Lecturer", org: "Bingham University", detail: "Specialized in Multimedia Technology and Digital Image Processing." },
+        { year: "Governance", role: "Elected Representative of NCS", org: "Computer Professionals Registration Council (CPN)", detail: "Chairman of the IT Curriculum Review Committee." },
+        { year: "Author", role: "Technical Author & Publisher", org: "Bridging the digital divide for thousands of Nigerians through simplified computer science textbooks." },
+      ]
+    },
+    {
+      title: "Phase 3: Jan 2026 – Onwards",
+      subtitle: "Promoting and Popularization of AI and Robotics",
+      description: "Leading the 'Fourth Industrial Revolution' in Nigeria, championing Generative AI integration.",
+      color: "bg-purple-600",
+      items: [
+        { year: "Current", role: "Director of Research and Strategy", org: "Afenifere", detail: "Secretary of the Eminent Elders Forum; Utilizes AI-driven data analytics for constitutional reforms." },
+        { year: "Advocacy", role: "AI & Robotics Popularization", org: "Innovation Hubs", detail: "Establishing hubs for practical robotics applications in agriculture (Agri-Bots) and industrial automation." }
+      ]
+    }
   ];
 
-  const education = [
-    { year: "1986", title: "Ph.D. in Digital Soil Variability Studies", organization: "University of Ibadan" },
-    { year: "1982", title: "Remote Sensing & Digital Image Interpretation", organization: "International Institute for Aerospace Studies (ITC), Netherlands" },
-    { year: "1980", title: "MSc. Remote Sensing & Environmental Monitoring", organization: "University of Wisconsin at Madison" },
-    { year: "1972", title: "BSc. in Computer Science", organization: "University of Ibadan" },
-    { year: "1959 - 1964", title: "Secondary School Education", organization: "Ilesa Grammar School" },
+  const credentials = [
+    { title: "NASA Technology Application Centre", location: "USA", type: "Specialized Training" },
+    { title: "International Institute for Aerospace Studies", location: "Netherlands", type: "Specialized Training" },
+    { title: "Fellow of the Nigeria Computer Society (FNCS)", location: "Nigeria", type: "Professional Fellowship" }
   ];
 
   const titleText = "A Journey Through Life at 70".split(" ");
@@ -148,9 +171,9 @@ export default function Home() {
           
           <motion.p 
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.8 }}
-            className="mt-6 text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed font-medium"
+            className="mt-6 text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto mb-12 leading-relaxed font-medium"
           >
-            Federal Public Servant, IT Consultant, Teacher, and Advocate for Service. Let's delve into my trajectory.
+            A Visionary Leader in Agronomy, Remote Sensing, IT, and Artificial Intelligence with over 50 years of impactful service.
           </motion.p>
           
           {/* Micro-Interaction Button */}
@@ -175,8 +198,8 @@ export default function Home() {
                <img src="/hero-portrait.jpg" alt="Akin Fapohunda" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
                <div className="absolute bottom-10 left-10 right-10 text-white">
-                 <h2 className="text-4xl font-extrabold mb-4">Welcome to my world.</h2>
-                 <p className="text-lg font-medium opacity-90 max-w-xl">"I stand before you today as a 70-year-old individual, humbled and grateful for the incredible journey life has offered me."</p>
+                 <h2 className="text-4xl font-extrabold mb-4">A Legacy of Service.</h2>
+                 <p className="text-lg font-medium opacity-90 max-w-xl">"A multi-disciplinary professional with over 50 years of impactful service across the Nigerian Public and Private Sectors."</p>
                </div>
             </motion.div>
 
@@ -184,19 +207,18 @@ export default function Home() {
             <div className="lg:col-span-4 flex flex-col gap-8">
                <motion.div 
                  initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
-                 className="flex-1 bg-accent/10 dark:bg-amber-50 rounded-[2.5rem] p-10 flex items-center justify-center border border-accent/20"
+                 className="flex-1 bg-accent/10 dark:bg-amber-50 rounded-[2.5rem] p-10 flex flex-col items-center justify-center border border-accent/20"
                >
-                 <Counter from={0} to={27} label="Years in Public Service" />
+                 <Counter from={0} to={50} label="Years of Impact" />
+                 <p className="text-[10px] uppercase font-black tracking-widest text-accent mt-2">Professional Service</p>
                </motion.div>
                <motion.div 
                  initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.4 }}
                  className="flex-1 glass rounded-[2.5rem] p-10 flex flex-col items-center justify-center text-center group"
                >
-                 <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                   <Quote size={28} />
-                 </div>
-                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Authored Books</h3>
-                 <p className="text-slate-500 dark:text-slate-400 font-medium text-sm">Simplifying computer science for beginners.</p>
+                 <div className="text-3xl font-black text-slate-900 dark:text-white mb-1">16k+</div>
+                 <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Graduates Trained</h3>
+                 <p className="text-slate-400 dark:text-slate-500 font-medium text-[10px]">Aflon Digital Group Human Capital Development.</p>
                </motion.div>
             </div>
 
@@ -264,8 +286,12 @@ export default function Home() {
                      </div>
                   </div>
                 </div>
-                <div className="p-6 bg-white dark:bg-slate-900">
-                   <h3 className="text-slate-900 dark:text-white font-bold text-lg line-clamp-2 leading-tight group-hover:text-accent transition-colors">{vid.title}</h3>
+                <div className="p-6 bg-white dark:bg-slate-900 flex flex-col min-h-[140px]">
+                   <h3 className="text-slate-900 dark:text-white font-bold text-base md:text-lg line-clamp-2 leading-tight group-hover:text-accent transition-colors mb-4">{vid.title}</h3>
+                   <div className="flex items-center gap-2 mt-auto">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-accent bg-accent/10 dark:bg-amber-500/10 px-2 py-1 rounded-md transition-colors">{vid.channel}</span>
+                      <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500">{new Date(vid.date).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}</span>
+                   </div>
                 </div>
              </div>
            ))}
@@ -305,46 +331,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trajectory Timeline - Minimalist Card List */}
-      <section id="experience" className="py-32 relative bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between items-center gap-10">
-            <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight">The Trajectory</h2>
-            <div className="bg-slate-100 dark:bg-[#030303] p-2 rounded-full inline-flex border border-slate-200 dark:border-slate-700">
-              <button 
-                onClick={() => setActiveTab("experience")}
-                className={`px-8 py-3 rounded-full text-sm font-bold transition-all ${activeTab === "experience" ? "bg-white dark:bg-slate-800 text-accent shadow-md" : "text-slate-500 hover:text-slate-800 dark:hover:text-white"}`}
-              >
-                Experience
-              </button>
-              <button 
-                onClick={() => setActiveTab("education")}
-                className={`px-8 py-3 rounded-full text-sm font-bold transition-all ${activeTab === "education" ? "bg-white dark:bg-slate-800 text-blue-600 shadow-md" : "text-slate-500 hover:text-slate-800 dark:hover:text-white"}`}
-              >
-                Education
-              </button>
-            </div>
+      {/* Trajectory Timeline - 3 Phase Storytelling */}
+      <section id="experience" className="py-32 relative bg-slate-50 dark:bg-[#030303] border-t border-slate-200 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="mb-20 text-center">
+            <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-6">Professional Trajectory</h2>
+            <p className="text-slate-500 dark:text-slate-400 text-xl max-w-2xl mx-auto font-medium">A journey across the Nigerian Public and Private Sectors, spanning over five decades.</p>
           </div>
 
-          <div className="space-y-6">
-            {(activeTab === "experience" ? experiences : education).map((item, index) => (
-               <motion.div 
-                 key={index}
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                 className="group glass p-8 rounded-3xl flex flex-col md:flex-row md:items-center justify-between hover:scale-[1.02] transition-transform shadow-sm"
-               >
-                 <div>
-                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">{item.title}</h3>
-                   <p className="text-slate-500 dark:text-slate-400 font-medium">{item.organization}</p>
-                 </div>
-                 <div className="mt-4 md:mt-0 px-6 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-[#030303] text-sm font-bold text-slate-900 dark:text-white whitespace-nowrap group-hover:border-accent group-hover:text-accent transition-colors shadow-sm">
-                    {item.year}
-                 </div>
-               </motion.div>
+          <div className="space-y-32">
+            {professionalPhases.map((phase, pIndex) => (
+              <div key={pIndex} className="relative">
+                {/* Phase Header */}
+                <div className="flex flex-col md:flex-row gap-8 mb-12 items-start md:items-center">
+                   <div className={`${phase.color} text-white px-6 py-2 rounded-full font-black tracking-widest text-sm uppercase shadow-lg shadow-accent/20`}>
+                     {phase.title}
+                   </div>
+                   <div className="flex-1">
+                     <h3 className="text-3xl font-bold text-slate-900 dark:text-white">{phase.subtitle}</h3>
+                     <p className="text-slate-500 dark:text-slate-400 font-medium mt-1">{phase.description}</p>
+                   </div>
+                </div>
+
+                {/* Phase Items Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                   {phase.items.map((item, iIndex) => (
+                      <motion.div 
+                        key={iIndex}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: iIndex * 0.1 }}
+                        className="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300 group"
+                      >
+                         <div className="flex justify-between items-start mb-4">
+                           <span className="text-accent dark:text-amber-500 font-black text-lg tracking-tighter">{item.year}</span>
+                           <div className="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-accent/10 group-hover:text-accent transition-colors">
+                              {pIndex === 0 ? <Briefcase size={18} /> : pIndex === 1 ? <GraduationCap size={18} /> : <Play size={18} />}
+                           </div>
+                         </div>
+                         <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 leading-tight group-hover:text-accent transition-colors">{item.role}</h4>
+                         <p className="text-slate-600 dark:text-slate-400 font-bold text-sm mb-3">{item.org}</p>
+                         {item.detail && <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">{item.detail}</p>}
+                      </motion.div>
+                   ))}
+                </div>
+              </div>
             ))}
+          </div>
+
+          {/* Credentials Section */}
+          <div className="mt-32 pt-32 border-t border-slate-200 dark:border-slate-800">
+             <div className="flex flex-col lg:flex-row gap-20">
+                <div className="lg:w-1/3">
+                   <h3 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Educational & Professional Credentials</h3>
+                   <p className="text-slate-500 dark:text-slate-400 font-medium text-lg leading-relaxed">
+                     Dr. Fapohunda is a technical writer and publisher of several books seeking to bring the knowledge of Computer Science to the level of everyone in Nigeria.
+                   </p>
+                   <div className="mt-10 flex items-center gap-4 text-slate-900 dark:text-white font-bold">
+                      <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white shadow-lg">
+                         <X className="w-6 h-6 rotate-45" />
+                      </div>
+                      Resides at Abuja, Nigeria
+                   </div>
+                </div>
+                <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                   {credentials.map((cred, idx) => (
+                      <div key={idx} className="glass p-10 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 hover:border-accent transition-colors group">
+                         <span className="text-accent font-black text-xs uppercase tracking-[0.2em] mb-4 block">{cred.type}</span>
+                         <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:translate-x-2 transition-transform">{cred.title}</h4>
+                         <p className="text-slate-500 dark:text-slate-400 font-bold">{cred.location}</p>
+                      </div>
+                   ))}
+                </div>
+             </div>
           </div>
         </div>
       </section>
